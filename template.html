@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welkom op todo-snel.nl</h1>
+    </header>
+    <div class="btn-section">
+        <button onclick="refreshList()">Reset to start</button>
+        <button onclick="filterChecked2()">Filter aangevinkt</button>
+        <button onclick="filterUnchecked()">Filter onaangevinkt</button>
+        <button onclick="addItem2('list-1')">Voeg item toe 2</button>
+        <button onclick="addItem('list-1')">Voeg item toe</button>
+    </div>    
+    </div>
+    <div class="my-grid">
+        <div id="list-1" class="todo-list"></div>
+    <div id="list-2" class="todo-list">
+    </div>
+
+    <script>
+        window.onload = () => fetchData();
+    </script>
+    <script src="functions.js"></script>
+</body>
